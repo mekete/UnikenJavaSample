@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="home_activity_larger_padding">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--google sign in-->
+
+    <!---->
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_margin_double">16dp</dimen>
+    <dimen name="card_margin_half">4dp</dimen>
+    <dimen name="card_border_radius">4dip</dimen>
+    <dimen name="home_menu_border_radius">50dip</dimen>
+
+    <!--to test and delete-->
+
+    <!--<dimen name="item_circle_size_large">72dp</dimen>-->
+
+
+    <!--for scroller recycler demo-->
+    <dimen name="textSize_sidebar">10sp</dimen>
+    <dimen name="large_textSize_sidebar">32sp</dimen>
+    <dimen name="textSize_sidebar_padding">20sp</dimen>
+    <dimen name="radius_sidebar">20dp</dimen>
+    <dimen name="ball_radius_sidebar">24dp</dimen>
+    <dimen name="social_button_radius">30dp</dimen>
+
+
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+    <dimen name="pager_margin">24dip</dimen>
+    <dimen name="icon_char_width">40dp</dimen>
+    <dimen name="circular_icon_char_width_help">32dp</dimen>
+    <dimen name="square_icon_char_width_help">28dp</dimen>
+    <dimen name="loading_dialog_vertical_displacement">120dp</dimen>
+    <dimen name="google_map_control_bottom_padding">200dp</dimen>
+    <dimen name="action_button_height">20dp</dimen>
+    <dimen name="home_icon_width">32dp</dimen>
+    <!---->
+
+
+    <dimen name="default_margin">20dp</dimen>
+    <dimen name="text_large">24sp</dimen>
+</resources>

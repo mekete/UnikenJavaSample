@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#0061c5</color>
+    <color name="primaryWhite">#e7e9fd</color>
+    <color name="colorPrimaryLight">#039be5</color>
+    <color name="colorPrimaryDark">#0251A3</color>
+    <color name="colorPrimaryTranslucent">#990061c5</color>
+
+    <color name="colorPrimaryTransparent">#550061c5</color>
+    <color name="home_button_pressed">#550061c5</color>
+    <!--<color name="home_button_released">#990061c5</color>-->
+    <color name="home_button_released">#dd0251A3</color>
+    <!--<color name="home_button_released">@color/colorPrimary</color>-->
+
+    <!---->
+    <color name="colorAccentDark">#b4be2e</color>
+    <color name="colorAccent">#c0ca33</color>
+    <color name="colorAccentTranslucent">#aac0ca33</color>
+    <color name="colorAccentTransparent">#88c0ca33</color>
+    <color name="colorAccent400">#d4e157</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBrokenWhite">#FAFAFA</color>
+    <color name="colorBrokenWhiteTranslucent">#99FAFAFA</color>
+
+    <!---->
+
+
+    <color name="google">#d50000</color>
+    <color name="google_translucent">#99d50000</color>
+    <!--<color name="facebook">#3f51b5</color>-->
+    <color name="facebook">#0061c5</color>
+    <color name="facebook_translucent">#993f51b5</color>
+
+    <!---->
+    <color name="organism_susceptibility_green">#79e157</color>
+    <color name="organism_susceptibility_yellow">#fce850</color>
+    <color name="organism_susceptibility_red">#e11b53</color>
+    <color name="organism_susceptibility_undefined">#ccc</color>
+    <!---->
+
+    <color name="status_accepted">#59d5e2</color>
+    <color name="status_collected">#074a91</color>
+    <color name="status_assigned">#e11b53</color>
+    <color name="status_delivered">#79e157</color>
+    <!---->
+    <color name="organism_gram_positive">#074a91</color>
+    <color name="organism_gram_negative">#d71dce</color>
+    <color name="organism_gram_unknown">#59d5e2</color>
+    <!--google sign in-->
+    <!---->
+    <color name="white">#ffffff</color>
+    <color name="broken_white">#f0f0f0</color>
+    <color name="black_secondary">#8a000000</color>
+    <color name="dark_grey">#666</color>
+    <color name="light_white_three">#bbb</color>
+    <color name="light_white_two">#dddddd</color>
+    <color name="light_white_one">#f1f1f1</color>
+    <color name="light_white">#fdfdfd</color>
+
+
+    <color name="colorError">#FFD5007C</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorSuccess">#a8f758</color>
+    <!---->
+
+    <color name="step_pager_previous_tab_color">@color/colorAccent400</color>
+    <color name="step_pager_selected_tab_color">@color/colorAccent</color>
+    <color name="step_pager_next_tab_color">@color/colorAccentTranslucent</color>
+
+    <!--Splash Screen-->
+</resources>

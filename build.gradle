@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.1"
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url "https://pkgs.dev.azure.com/uniken-mtd/uniken-mtd-repo/_packaging/uniken-mtd-mobile/maven/v1"
+            credentials {
+                username "UNIKEN_AZURE_ARTIFACTS"
+                password "jdmlntt3u7oiyig5qpy56xhutawma27suuz5643i7dguw3wp2pwa"
+            }
+        }
+        maven {
+            url "https://maven.regulaforensics.com/RegulaDocumentReader/"
+        }
+        maven {
+            url "https://maven.regulaforensics.com/RegulaDocumentReader/Beta/"
+        }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
