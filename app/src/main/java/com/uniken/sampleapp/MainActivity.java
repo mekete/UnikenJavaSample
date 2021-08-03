@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        makeHttpConnection();
+        startRdnaClient();
 
         setContentView(R.layout.activity_register_activation);
         //mMainContent = findViewById(R.id.main_content);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void makeHttpConnection() {
+    private void startRdnaClient() {
         final RDNAAPIClient instance = RDNAAPIClient.getInstance(MainActivity.this);
         //instance.rdna.setActivationCode()
         final RDNA.RDNAHTTPRequest httpRequest = new RDNA.RDNAHTTPRequest();
@@ -64,18 +64,18 @@ public class MainActivity extends AppCompatActivity {
         String cipherSpec = "AES/256/CFB/PKCS7Padding";
         byte[] cipherSalt = null;// "MyCipherSalt".getBytes();
         byte[] plainTextDataPacket = someDataToEncrypt.getBytes();
-        Log.e(TAG, "\n\n\n\n CCCCC before calling encryptDecrypt errorCode: ");
+        Log.e(TAG, "\n>>>>>>>>\n\n\n\n CCCCC before calling encryptDecrypt errorCode: ");
 
         RDNA.RDNAStatus<byte[]> rdnaStatus = instance.rdna.encryptDataPacket(privacyScope, cipherSpec, cipherSalt, plainTextDataPacket);
-        Log.e(TAG, "\n\n\n\n CCCCC encryptDecrypt errorCode: " + rdnaStatus.errorCode);
+        Log.e(TAG, "\n>>>>>>>>\n\n\n\n CCCCC encryptDecrypt errorCode: " + rdnaStatus.errorCode);
         if (rdnaStatus.result != null) {
-            Log.e(TAG, "\n\nencryptDecrypt result: " + new String(rdnaStatus.result));
+            Log.e(TAG, "\n>>>>>>>>\n\nencryptDecrypt result: " + new String(rdnaStatus.result));
             encryptedString = new String(rdnaStatus.result);
         } else {
-            Log.e(TAG, "\n\n encryptDecrypt result: is NULL ");
+            Log.e(TAG, "\n>>>>>>>>\n\n encryptDecrypt result: is NULL ");
 
         }
-        Log.e(TAG, "\n\n encryptDecrypt result: " + rdnaStatus.errorObj.getErrorString());
+        Log.e(TAG, "\n>>>>>>>>\n\n encryptDecrypt result: " + rdnaStatus.errorObj.getErrorString());
 
     }
 

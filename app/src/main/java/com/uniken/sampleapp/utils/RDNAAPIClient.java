@@ -48,10 +48,10 @@ public class RDNAAPIClient {
                     "\n encryptedString:::: " + encryptedString);
             decryptData(RDNAAPIClient.this, rdnaStatus.result);
         } else {
-            Log.e(TAG, "\n\n AAA encryptData result: is NULL ");
+            Log.e(TAG, "\n>>>>>>>>\n\n AAA encryptData result: is NULL ");
 
         }
-        Log.e(TAG, "\n\n AAAA encryptDecrypt result: " + rdnaStatus.errorObj.getErrorString());
+        Log.e(TAG, "\n>>>>>>>>\n\n AAAA encryptDecrypt result: " + rdnaStatus.errorObj.getErrorString());
 
     }
 
@@ -68,7 +68,7 @@ public class RDNAAPIClient {
                             "\n restored:::: " + rdnaStatus.result
             );
         } else {
-            Log.e(TAG, "\n\n BBB decryptData result: is NULL ");
+            Log.e(TAG, "\n>>>>>>>>\n\n BBB decryptData result: is NULL ");
 
         }
     }
@@ -91,7 +91,7 @@ public class RDNAAPIClient {
                 loggingLevel,
                 appCtx);
 
-        Log.e(TAG, "\nCOOOL\nRDNAAPIClient: " +
+        Log.e(TAG, "\n>>>>>>>>\nCOOOL\nRDNAAPIClient: " +
                 "\n getErrorString : " + error.getLongErrorCode() +
                 "\n getErrorString : " + error.getShortErrorCode() +
                 "\n getErrorString : " + error.getErrorString()
@@ -111,193 +111,197 @@ public class RDNAAPIClient {
     RDNA.RDNACallbacks rdnaCallbacks = new RDNA.RDNACallbacks() {
         @Override
         public Context getDeviceContext() {
-            Log.e(TAG, "\ngetDeviceContext: " + " >>> Time: " + new Date());
+            Log.e(TAG, "\n>>>>>>>>\ngetDeviceContext: " + " >>> Time: " + new Date());
             return activity;
         }
 
         @Override
         public RDNA.RDNASecurityServiceConfiguration getSecurityServiceConfiguration() {
-            Log.e(TAG, "\ngetSecurityServiceConfiguration: " + "");
+            Log.e(TAG, "\n>>>>>>>>\ngetSecurityServiceConfiguration: " + "");
             return null;
         }
 
         @Override
         public String getDeviceToken() {
-            Log.e(TAG, "\ngetDeviceToken: " + "");
+            Log.e(TAG, "\n>>>>>>>>\ngetDeviceToken: " + "");
             return null;
         }
 
         @Override
         public int onGetNotifications(RDNA.RDNAStatusGetNotifications rdnaStatusGetNotifications) {
-            Log.e(TAG, "\nonGetNotifications: " + "\nrdnaStatusGetNotifications: " + rdnaStatusGetNotifications);
+            Log.e(TAG, "\n>>>>>>>>\nonGetNotifications: " + "\nrdnaStatusGetNotifications: " + rdnaStatusGetNotifications);
             return 0;
         }
 
         @Override
         public int onUpdateNotification(RDNA.RDNAStatusUpdateNotification rdnaStatusUpdateNotification) {
-            Log.e(TAG, "\nonUpdateNotification: " + "\nrdnaStatusUpdateNotification: " + rdnaStatusUpdateNotification);
+            Log.e(TAG, "\n>>>>>>>>\nonUpdateNotification: " + "\nrdnaStatusUpdateNotification: " + rdnaStatusUpdateNotification);
             return 0;
         }
 
         @Override
         public int onTerminate(RDNA.RDNAStatusTerminate rdnaStatusTerminate) {
-            Log.e(TAG, "\nonTerminate: " + "\nrdnaStatusTerminate: " + rdnaStatusTerminate);
+            Log.e(TAG, "\n>>>>>>>>\nonTerminate: " + "\nrdnaStatusTerminate: " + rdnaStatusTerminate);
             return 0;
         }
 
         @Override
         public int onPauseRuntime(RDNA.RDNAStatusPause rdnaStatusPause) {
-            Log.e(TAG, "\nonPauseRuntime: " + "\nrdnaStatusPause: " + rdnaStatusPause);
+            Log.e(TAG, "\n>>>>>>>>\nonPauseRuntime: " + "\nrdnaStatusPause: " + rdnaStatusPause);
             return 0;
         }
 
         @Override
         public int onResumeRuntime(RDNA.RDNAStatusResume rdnaStatusResume) {
-            Log.e(TAG, "\nonResumeRuntime: " + "\nrdnaStatusResume: " + rdnaStatusResume);
+            Log.e(TAG, "\n>>>>>>>>\nonResumeRuntime: " + "\nrdnaStatusResume: " + rdnaStatusResume);
             return 0;
         }
 
         @Override
         public int onConfigReceived(RDNA.RDNAStatusGetConfig rdnaStatusGetConfig) {
-            Log.e(TAG, "\nonConfigReceived: " + "\nrdnaStatusGetConfig: " + rdnaStatusGetConfig);
+            Log.e(TAG, "\n>>>>>>>>\nonConfigReceived: " + "\nrdnaStatusGetConfig: " + rdnaStatusGetConfig);
             return 0;
         }
 
         @Override
         public int onGetAllChallengeStatus(RDNA.RDNAStatusGetAllChallenges rdnaStatusGetAllChallenges) {
-            Log.e(TAG, "\nonGetAllChallengeStatus: " + "\nrdnaStatusGetAllChallenges: " + rdnaStatusGetAllChallenges);
+            Log.e(TAG, "\n>>>>>>>>\nonGetAllChallengeStatus: " + "\nrdnaStatusGetAllChallenges: " + rdnaStatusGetAllChallenges);
             return 0;
         }
 
         @Override
         public int onGetPostLoginChallenges(RDNA.RDNAStatusGetPostLoginChallenges rdnaStatusGetPostLoginChallenges) {
-            Log.e(TAG, "\nonGetPostLoginChallenges: " + "\nrdnaStatusGetPostLoginChallenges: " + rdnaStatusGetPostLoginChallenges);
+            Log.e(TAG, "\n>>>>>>>>\nonGetPostLoginChallenges: " + "\nrdnaStatusGetPostLoginChallenges: " + rdnaStatusGetPostLoginChallenges);
             return 0;
         }
 
         @Override
         public int onLogOff(RDNA.RDNAStatusLogOff rdnaStatusLogOff) {
-            Log.e(TAG, "\nonLogOff: " + "\nrdnaStatusLogOff: " + rdnaStatusLogOff);
+            Log.e(TAG, "\n>>>>>>>>\nonLogOff: " + "\nrdnaStatusLogOff: " + rdnaStatusLogOff);
             return 0;
         }
 
         @Override
         public RDNA.RDNAIWACreds getCredentials(String s) {
-            Log.e(TAG, "\ngetCredentials: " + "\ns: " + s);
+            Log.e(TAG, "\n>>>>>>>>\ngetCredentials: " + "\ns: " + s);
             return null;
         }
 
         @Override
         public int onGetRegistredDeviceDetails(RDNA.RDNAStatusGetRegisteredDeviceDetails rdnaStatusGetRegisteredDeviceDetails) {
-            Log.e(TAG, "\nonGetRegistredDeviceDetails: " + "\nrdnaStatusGetRegisteredDeviceDetails: " + rdnaStatusGetRegisteredDeviceDetails);
+            Log.e(TAG, "\n>>>>>>>>\nonGetRegistredDeviceDetails: " + "\nrdnaStatusGetRegisteredDeviceDetails: " + rdnaStatusGetRegisteredDeviceDetails);
             return 0;
         }
 
         @Override
         public int onUpdateDeviceDetails(RDNA.RDNAStatusUpdateDeviceDetails rdnaStatusUpdateDeviceDetails) {
-            Log.e(TAG, "\nonUpdateDeviceDetails: " + "\nrdnaStatusUpdateDeviceDetails: " + rdnaStatusUpdateDeviceDetails);
+            Log.e(TAG, "\n>>>>>>>>\nonUpdateDeviceDetails: " + "\nrdnaStatusUpdateDeviceDetails: " + rdnaStatusUpdateDeviceDetails);
             return 0;
         }
 
         @Override
         public int onGetNotificationsHistory(RDNA.RDNAStatusGetNotificationHistory rdnaStatusGetNotificationHistory) {
-            Log.e(TAG, "\nonGetNotificationsHistory: " + "\nrdnaStatusGetNotificationHistory: " + rdnaStatusGetNotificationHistory);
+            Log.e(TAG, "\n>>>>>>>>\nonGetNotificationsHistory: " + "\nrdnaStatusGetNotificationHistory: " + rdnaStatusGetNotificationHistory);
             return 0;
         }
 
         @Override
         public int onSessionTimeout(String s) {
-            Log.e(TAG, "\nonSessionTimeout: " + "\ns: " + s);
+            Log.e(TAG, "\n>>>>>>>>\nonSessionTimeout: " + "\ns: " + s);
             return 0;
         }
 
         @Override
         public int onSdkLogPrintRequest(RDNA.RDNALoggingLevel rdnaLoggingLevel, String s) {
-            Log.e(TAG, "\nonSdkLogPrintRequest: " + "\nrdnaLoggingLevel: " + rdnaLoggingLevel + "\ns : " + s);
+            Log.e(TAG, "\n>>>>>>>>\nonSdkLogPrintRequest: " + "\nrdnaLoggingLevel: " + rdnaLoggingLevel + "\ns : " + s);
             return 0;
         }
 
         @Override
         public boolean permissionRequired(String[] strings) {
-            Log.e(TAG, "\npermissionRequired: " + "\nstrings: " + strings);
+            Log.e(TAG, "\n>>>>>>>>\npermissionRequired: " + "\nstrings: " + strings);
             return false;
         }
 
         @Override
         public void onInitializeError(RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\nonInitializeError: " + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\nonInitializeError: " + "\nrdnaError: " + rdnaError);
 
         }
 
         @Override
         public void onInitializeProgress(RDNA.RDNAInitProgressStatus rdnaInitProgressStatus) {
-            Log.e(TAG, "\nonInitializeProgress: " + "\nrdnaInitProgressStatus: " + rdnaInitProgressStatus);
+            Log.e(TAG, "\n>>>>>>>>\nonInitializeProgress: " + "\nrdnaInitProgressStatus: " + rdnaInitProgressStatus);
 
         }
 
         @Override
         public void getUser(String[] strings, String s, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\nAAAAAAAA getUser: ");
-            rdna.setUser(userNameOnServer);//test_test
+            Log.e(TAG, "\n>>>>>>>>\nAAAAAAAA getUser: ");
+            final RDNA.RDNAError rdnaErrorSetError = rdna.setUser(userNameOnServer);
         }
 
         @Override
         public void getActivationCode(String s, String s1, int i, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\ngetActivationCode: " + "\ns: " + s + "\ni: " + i + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\ngetActivationCode: " + "\ns: " + s + "\ni: " + i + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
             if (s.equals("my_user_name_1")) {
                 //no need. The key provided will be associated with one user only
             }
-            Log.e(TAG, "\n Saved ActivationCode: " + SettingsManager.getActivationCode());
+            Log.e(TAG, "\n>>>>>>>>\nSaved ActivationCode: " + SettingsManager.getActivationCode());
 
             rdna.setActivationCode(SettingsManager.getActivationCode());
-
+            final RDNA.RDNAError performVerifyAuthResponse = rdna.performVerifyAuth(true);
+            //rdna.getNotifications(A.....)
+            RDNA.RDNAError xxx= rdna.fallbackNewDeviceActivationFlow();
         }
 
         @Override
         public void getPassword(String s, RDNA.RDNAChallengeOpMode rdnaChallengeOpMode, int i, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\ngetPassword: " + "\ns: " + s + "\ni: " + i + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\ngetPassword: " + "\ns: " + s + "\ni: " + i + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
 
         }
 
         @Override
         public void getDeviceName(String s, String s1, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\ngetDeviceName: " + "\ns: " + s + "\ns1: " + s1 + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\ngetDeviceName: " + "\ns: " + s + "\ns1: " + s1 + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
 
         }
 
         @Override
         public void getAccessCode(String s, String s1, int i, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\ngetAccessCode: " + "\ns: " + s + "\ns1: " + s1 + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
-            Log.e(TAG, "\n Saved AccessCode : " + SettingsManager.getAccessCode());
+            Log.e(TAG, "\n>>>>>>>>\ngetAccessCode: " + "\ns: " + s + "\ns1: " + s1 + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\nSaved AccessCode : " + SettingsManager.getAccessCode());
             rdna.setAccessCode(SettingsManager.getAccessCode());
         }
 
         @Override
         public void addNewDeviceOptions(String s, String[] strings, HashMap<String, String> hashMap) {
-            Log.e(TAG, "\naddNewDeviceOptions: " + "\ns: " + s + "\nstrings: " + strings + "\nhashMap: " + hashMap);
+            Log.e(TAG, "\n>>>>>>>>\naddNewDeviceOptions: " + "\ns: " + s + "\nstrings: " + strings + "\nhashMap: " + hashMap);
+            final RDNA.RDNAError performVerifyAuthResponse = rdna.performVerifyAuth(true);
+            final RDNA.RDNAError performVerifyAuthResponse2 = rdna.fallbackNewDeviceActivationFlow();
         }
 
         @Override
         public void onUserLoggedIn(String s, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\n onUserLoggedIn: " + "\ns: " + s + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\nonUserLoggedIn: " + "\ns: " + s + "\nrdnaChallengeResponse: " + rdnaChallengeResponse + "\nrdnaError: " + rdnaError);
             encryptData(RDNAAPIClient.this, "Here is my message");
         }
 
         @Override
         public void onTOTPRegistrationStatus(RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\nonTOTPRegistrationStatus: " + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\nonTOTPRegistrationStatus: " + "\nrdnaError: " + rdnaError);
 
         }
 
         @Override
         public void onTOTPGenerated(String s, String s1, int i, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\nonTOTPGenerated: " + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\nonTOTPGenerated: " + "\nrdnaError: " + rdnaError);
 
         }
 
         @Override
         public void getTOTPPassword(String s, int i, int i1, RDNA.RDNAChallengeResponse rdnaChallengeResponse, RDNA.RDNAError rdnaError) {
-            Log.e(TAG, "\ngetTOTPPassword: " + "\nrdnaError: " + rdnaError);
+            Log.e(TAG, "\n>>>>>>>>\ngetTOTPPassword: " + "\nrdnaError: " + rdnaError);
 
         }
 
@@ -395,7 +399,7 @@ public class RDNAAPIClient {
     public RDNA.RDNAHTTPCallbacks httpCallbacks = new RDNA.RDNAHTTPCallbacks() {
         @Override
         public int onHttpResponse(RDNA.RDNAHTTPStatus httpStatus) {
-            Log.e(TAG, "\n\nonHttpResponse URL: " + httpStatus.getRequest().url);
+            Log.e(TAG, "\n>>>>>>>>\n\nonHttpResponse URL: " + httpStatus.getRequest().url);
             //encryptData( RDNAAPIClient.this,  "someDataToEncrypt");
             return 0;
         }
